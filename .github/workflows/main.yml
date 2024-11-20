@@ -46,8 +46,8 @@ jobs:
 
     - name: Flet Build Web
       run: |
-        echo "Building with base-url: https://github.com/harshithak3012/annotation"
-        flet build web --base-url https://github.com/harshithak3012/annotation --route-url-strategy hash
+        echo "Building with base-url: /annotation"
+        flet build web --base-url /annotation --route-url-strategy hash
 
     - name: Upload Artifact
       uses: actions/upload-pages-artifact@v3
